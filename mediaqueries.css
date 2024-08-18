@@ -6,6 +6,10 @@
     .about-containers{
         flex-wrap: wrap;
     }
+    #contact,
+    #projects {
+    height: fit-content;
+  }
 }
 
 @media screen and (max-width:1200px) {
@@ -25,7 +29,7 @@
     .arrow{
         display: none;
     }
-    sections, .section-container{
+    section, .section-container{
         height: fit content;
     }
     section{
@@ -47,7 +51,6 @@
     #contact,
     footer{
         height: 40vh;
-        margin-bottom: 0;
     }
     #profile{
         height: 83vh;
