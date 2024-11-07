@@ -226,7 +226,7 @@
     }
 
     .btn-color-1, .btn-color-2{
-        border: rgb(53, 53, 53) 0.1rem solid;
+        border: rgb(163,163,163) 0.1rem solid;
     }
 
     .btn-color-1:hover, .btn-color-2:hover{
@@ -398,11 +398,11 @@
         justify-content: center;
         gap: 0.5rem;
         margin: 1rem;
-        
+    
     }
 
     .contact-info-container p{
-        font-size: larger;
+        font-size: small;
     }
 
     .contact-icon{
