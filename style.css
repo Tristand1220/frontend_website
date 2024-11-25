@@ -357,9 +357,10 @@
     }
 
     .project-img{
-        border-radius: 2rem;
-        width: 90%;
-        height: 90%;
+        border-radius: 1rem;
+        width: auto;
+        height: 400px;
+        
     }
 
     .project-title{
@@ -371,6 +372,8 @@
         color: black;
         border-color:rgb(163,163,163);
     }
+    
+    
 
     /*CONTACT PAGE*/
 
