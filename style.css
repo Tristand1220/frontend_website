@@ -391,8 +391,8 @@
         border: rgb(146,114,187) 0.1rem solid;
         border-color: rgb(163,163,163);
         /*background: rgb(250, 250, 250);*/
-        margin: 2rem auto;
-        padding: 0.5rem;
+        margin: 1.5rem auto;
+        padding: 1.5rem;
     }
 
     .contact-info-container{
@@ -400,20 +400,23 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        margin: 1rem;
+        margin: 2rem;
     
     }
 
-    .contact-info-container p{
+    .conatct-info-container p{
         font-size: small;
+        padding: .5rem;
+
     }
 
     .contact-icon{
         cursor: default;
+        height: 2rem;
     }
 
     .email-icon{
-        height: 2.5rem;
+        height: 2rem;
     }
 
     /*FOOTER*/
