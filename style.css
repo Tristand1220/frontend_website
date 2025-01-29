@@ -381,7 +381,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 70vh;
+        height: 100vh;
     }
 
     .contact-info-upper-container{
@@ -399,7 +399,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 0.5rem;
+        gap: 1rem;
         margin: 1rem;
     
     }
