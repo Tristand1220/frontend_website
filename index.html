@@ -42,7 +42,7 @@
         <div class="section_text">
             <p class="section_text_p1">Hello, I'm</p>
             <h1 class="title">Tristan Daniel</h1>
-            <p class="section_text_p2">UX/UI Designer and Researcher</p>
+            <p class="section_text_p2">UX/UI Designer and Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/TristanResume_CS.pdf')">View Resume</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
@@ -53,210 +53,248 @@
             </div>
         </div>
     </section>
+    <!--Add news bar to display top skills-->
     <section id="About">
         <p class="section_text_p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
-            <div class="section_pic-container">
-                <img src="./assets/IMG_8335.png" alt="Profile picture" class="about-pic" height="300px" width="450px">
+            <!---I want to add a slideshow of pictures here-->
+            <div class="section_pic-container1">
+                <div class="slideshow-wrapper">
+                    <div class="slide active">
+                        <img src="./assets/IMG_8335.png" alt="Profile picture" class="about-pic" height="300px" width="450px">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/21eb6e3994e35aa225de61aaa5e880e6 (1).JPG" alt="Profile picture" class="about-pic">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/IMG_0296.JPG" alt="Profile picture" class="about-pic">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/IMG_3826.PNG" alt="Profile picture" class="about-pic" height="300px" width="450px">
+                    </div>
+
+                    <!---Navigation Arrows-->
+                    <button class="slideshow-arrow arrow-left" onclick="changeSlide(-1)">
+                        <span>‹</span>
+                    </button>
+                    <button class="slideshow-arrow arrow-right" onclick="changeSlide(1)">
+                        <span>›</span>
+                    </button>
+
+                    <!---Navigation Arrows-->
+                    <div class="slideshow-dots">
+                        <span class="dot active" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot " onclick="goToSlide(2)"></span>
+                        <span class="dot " onclick="goToSlide(3)"></span>
+                    </div>
+                </div>
             </div>
             <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>- Web Developer Assistant @ Georgia Tech</p>
-                        <p>- UX/UI Design Intern @ Qlik</p>
-                        <p>- Graduate Researcher (HCI coursework) @ Georgia Tech-Shenzhen</p>
-                        <p>- Undergraduate Researcher (Machine Learning) @ University of Arizona</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="eductaion icon" class="icon">
+                <div class="info-cards">
+                    <div class="info-card">
                         <h3>Education</h3>
-                        <p>- B.S Computer Science @ Troy Univeristy  <br/>- M.Sc. Computer Science @ Georgia Institute of Technology (Expected 2026)</p>
+                        <p><strong>Masters of Computer Sciecne</strong><br>
+                        Georgia Institute of Technology<br>
+                        <em>Expected 2026</em><br>
+                        <em>Study abroad Shenzhen,China</em>
+                        <p style="margin-top: 1rem;"><strong>Bachelors of Computer Science</strong><br>
+                        Troy University</p>
+                        <p>GABBR LSAMP Program • Machine Learning Research</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>As a Computer Science master's student at Georgia Tech specializing in artificial intelligence, I combine technical expertise with user-centered design principles and AI developement to build intuitive, interactive systems. My research experience spans from machine learning projects through the GABBR LSAMP program at Troy University to UX research and software development initiatives during my abroad studies in Shenzhen, China. I am passionate about creating intuitive digital experiences that bridge the gap between users and technology asa ameans to promote social impact and welfare.
-                        </p>
-                </div>
+                    <p>As a Computer Science master's student at Georgia Tech specializing in artificial intelligence, I combine technical expertise with user-centered design principles and AI developement to build intuitive, interactive systems. My research experience spans from machine learning projects through the NSF-funded lab projects program to UX research and software development initiatives during my abroad studies in Shenzhen, China. I am passionate about creating intuitive digital experiences that bridge the gap between users and technology as a ameans to promote social impact and welfare.
+                    </p>
+                    </div>
             </div>
         </div>
     </section>
+
+    <section class="curious-section">
+        <div class="text-container">
+            <h3 class="curious">If you were curious to know....</h3>
+            <ul class="text-container-c">
+                <li>I've picked up a hobby in Ardunio and microcontroller technology. Right now, I'm working on designing custom-built pedals for my guitar</li>
+                <li>I love thrifting, and you can catch me at your nearest vintage pop-up market</li>
+                <li>If I'm not coding or designing, I'm probably making music under my solo band: <a href="https://www.youtube.com/@mygirlfriendswedding"><em>my girlfriend's wedding</em></a></li>
+            </ul> 
+        </div>
+    </section>
+
+    <!---Experience section header-->
     <section id="experience">
-        <p class="section_text_p1">Explore My</p>
+        <p class="section_text_p1">Professional</p>
         <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Technical Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <div>
-                                <h3>HTML/CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Java</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>C++</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>React.Js</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Node.Js</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Pytorch</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Ardiuno</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>OpenCV</h3>
-                                <p>Expert</p>
-                            </div>
-                        </article>
-                        
-                        
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Design & Research</h2>
-                    <div class="article-container">
-                        <article>
-                            <div>
-                                <h3>Figma</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Survey Creation</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Wireframe/Prototyping</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Usability Testing</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Stakeholder Communication</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Storyboarding</h3>
-                            </div>
-                        </article>
+        <div class="experience-timeline">
+
+            <!---Web Dev-->
+            <div class="timeline-item">
+                <div class ="timeline-header">
+                    <div>
+                        <h2 class="timeline-title">Web Developer Assistant</h2>
+                        <h3 class="timeline-company">Georgia Institue of Technology</h3>
+                        <div class="project-tags">
+                            <span class="tag">UX/UI Design</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Drupal</span>
+                            <span class="tag">WordPress</span>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!---UX/UI Design Intern-->
+            <div class="timeline-item">
+                <div class ="timeline-header">
+                    <div>
+                        <h2 class="timeline-title">UX/UI Intern</h2>
+                        <h3 class="timeline-company">Qlik</h3>
+                        <div class="project-tags">
+                            <span class="tag">User Interviews</span>
+                            <span class="tag">Full Stack Development</span>
+                            <span class="tag">React.js</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---UX/UI Researcher-->
+            <div class="timeline-item">
+                <div class ="timeline-header">
+                    <div>
+                        <h2 class="timeline-title">UX/UI Researcher</h2>
+                        <h3 class="timeline-company">Georgia Tech-Shenzhen</h3>
+                        <div class="project-tags">
+                            <span class="tag">Quantitative analysis</span>
+                            <span class="tag">User Research</span>
+                            <span class="tag">Qualtitative analysis</span>
+                            <span class="tag">Wireframing/Protoyping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---Undergraduate Researcher-->
+            <div class="timeline-item">
+                <div class ="timeline-header">
+                    <div>
+                        <h2 class="timeline-title">Undergraduate Machine Learning Researcher</h2>
+                        <h3 class="timeline-company">Univeristy of Arizona</h3>
+                        <div class="project-tags">
+                            <span class="tag">Pytorch</span>
+                            <span class="tag">Neural Network Research</span>
+                            <span class="tag">Algorthim Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+
+    
     <section id="projects">
         <p class="section_text_p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-conatiner">
-                    <div class="article-container">
-                        <img src="./assets/Screenshot 2025-04-16 144659.png" alt="Project 3" class="project-img" />
+
+        <div class="projects-grid">
+            <!--practiLang Project-->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="./assets/Screenshot 2025-04-16 144659.png" alt="practiLang"/>
                     </div>
-                    <h2 class="experience-sub-title project-title">practiLang - A practical approach to langauge learning throug web chatrooms</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"  onclick="window.open('https://www.figma.com/deck/7lxvQi2T8DLIoCaYyk2sEH/CS-6460-Presentation_practiLang?node-id=4002-138&t=aAE1G8IsrOJbVeXq-1')">Open Presenatation</Article></button>
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Tristand1220/practiLang'">
-                            GitHub
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-conatiner">
-                    <div class="article-container">
-                        <img src="./assets/Pay_Attention_to_.Features.pptx.png" alt="Project 1" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">CAT Vehicle Lane Detection Research</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"  onclick="window.open('./assets/Pay_Attention_To_Features.pdf')">Open Article</Article></button>
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Tristand1220/Lane_detection'">
-                            GitHub
-                        </button>
+                    <div class="project-content">
+                        <h2 class="project-title">practiLang - A practical approach to langauge learning throug web chatrooms</h2>
+                        <p class="project-description">A practical approach to language learning through interactive web chatrooms, enabling real-time conversation practice with native speakers. </p>
+                        <div class="project-tags">
+                            <span class="tag">UX/UI Design</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="project-btn primary"  onclick="window.open('https://www.figma.com/deck/7lxvQi2T8DLIoCaYyk2sEH/CS-6460-Presentation_practiLang?node-id=4002-138&t=aAE1G8IsrOJbVeXq-1')">Open Presenatation</button>
+                            <button class="project-btn secondary" onclick="location.href='https://github.com/Tristand1220/practiLang'">GitHub</button>
+                        </div>
                     </div>
                 </div>
-                <div class="details-container color-conatiner">
-                    <div class="article-container">
-                        <img src="./assets/Rolling2 (2).png" alt="Project 2" class="project-img" height="10px" width="25px"/>
+
+                <!--CAPTCHA Project-->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="./assets/Rolling2 (2).png" alt="Captcha"/>
                     </div>
-                    <h2 class="experience-sub-title project-title">I, not Robot: A Human-Centered Redesign of CAPTCHA</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Individual_Project_HCI (3).pdf')">Open Article</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/HgaNb2VQ9uM'">
-                            Video Presentation
-                        </button>
+                    <div class="project-content">
+                        <h2 class="project-title">I, not Robot: A Human-Centered Redesign of CAPTCHA</h2>
+                        <p class="project-description">A human-centered redesign of traditional CAPTCHA systems, improving accessibility and user experience while maintaining security.</p>
+                        <div class="project-tags">
+                            <span class="tag">UX Design</span>
+                            <span class="tag">HCI Research</span>
+                            <span class="tag">Figma Prototyping</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="project-btn primary"  onclick="window.open('./assets/Individual_Project_HCI (3).pdf')">Open Article</Article></button>
+                            <button class="project-btn secondary" onclick="location.href='https://youtu.be/HgaNb2VQ9uM'">Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--SocioTechnical Project-->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="./assets/Recommendation given.png" alt="SDH"/>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">Identity-based mental resources chabot for underrepresented students</h2>
+                        <p class="project-description">Designing digital health interventions to address the need for identity-based mental health treatments for marginalized student populations.</p>
+                        <div class="project-tags">
+                            <span class="tag">UX Design</span>
+                            <span class="tag">HCI Research</span>
+                            <span class="tag">Figma Prototyping</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="project-btn primary"  onclick="window.open('./assets/Final Project_Paper.pdf')">Open Article</Article></button>
+                            <button class="project-btn secondary" onclick="location.href='https://www.figma.com/proto/Ra9zBek0WE3vbDS84nvrxU/SDH-Prototype?page-id=2%3A2&node-id=15-815&p=f&viewport=-988%2C640%2C0.11&t=nUhrFeF0cbc5SAUg-1&scaling=contain&content-scaling=fixed&starting-point-node-id=15%3A815'">View Prototype</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--CAT Vehicle Project-->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="./assets/Pay_Attention_to_.Features.pptx.png" alt="CAT"/>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">CAT Vehicle Lane Detection Research</h2>
+                        <p class="project-description">Advanced machine learning research focused on autonomous vehicle lane detection using computer vision and attention mechanisms.</p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Object Detecion</span>
+                            <span class="tag">Neural Network Research</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="project-btn primary"  onclick="window.open('./assets/Pay_Attention_To_Features.pdf')">Open Article</Article></button>
+                            <button class="project-btn secondary" onclick="location.href='https://github.com/Tristand1220/Lane_detection'">GitHub</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
     </section>
     <section id="contact">
-        <p class="section_text_p1">Get In Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="conatct-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon"/>
-                <p><a href="mailto:tdaniel60@gatech.edu">tdaniel60@gatech.edu</a></p>
-            </div>
-            <div class="conatct-info-container">
+        <p class="section_text_p1">Let's Connect!</p>
+        <h1 class="title">Get In Touch</h1>
+        <p class="subtitle">
+            Feel free to reach out for collaborations, opportunities, or just to chat about UX/UI design and front end development!
+        </p>
+        <div class="social-links">
+            <div class="social-link" onclick="window.open('https://www.linkedin.com/in/tristan-daniel-8b9b26253/', '_blank')" title="LinkedIn">
                 <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/tristan-daniel-8b9b26253/">LinkedIn</a></p>
+            </div>
+            <div class="social-link" title="Email">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon"/>
+                
             </div>
         </div>
     </section>
@@ -271,7 +309,7 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169;2024 Tristan Daniel. All Rights Reserved</p>
+        <p>Copyright &#169;2026 Tristan Daniel. All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
     
